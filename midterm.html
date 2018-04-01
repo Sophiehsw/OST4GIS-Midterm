@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div id="intro">
+        <center><img src="header2.jpg" height="255" width="350"></center>
+        <h1 class="header">Home Price Analysis in Philadelphia</h1>
+        <p class="main"><span class="title-replace">Year 2010 to 2017</span></p>
+        <p><span class="para-replace">What area has the highest increase or decrease home sales price in Philadelphia?</span></p>
+        <p><span class="text-replace">Click on 'NEXT >' to learn more!</span></p>
+        <p><span class="link-replace"><a href="https://www.zillow.com/philadelphia-pa/home-values/"> Zillow Philadelphia Home Value </a></span></p>
+      </div>
+      <div id="footer">Data Source <a href="https://www.opendataphilly.org/" title="OpenDataPhilly">OpenDataPhilly</a>.</a> Project conducted by Haishan Wu.</a></div>
+      <div id="results" style="display: none;">
+        <p class="main">The home sale price for this area has changed for: <span class="pricerange">
+        Price</span> from 2010 to 2017.</p>
+        <p><span class="link-replace2"><a href="https://www.trulia.com/home_prices/Pennsylvania/Philadelphia-heat_map/"> Philadelphia Home Price Heat Map </a></span></p>
+      </div>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Legend1 -->
+    <div class="legend">
+      <div class='legend-title'>Median Home Sales Price</div>
+      <div class='legend-scale'>
+        <ul class='legend-labels'>
+          <li><span style='background:#800026;'></span> <p class="lab1">0 to 20</p></li>
+          <li><span style='background:#BD0026;'></span> <p class="lab2">20 to 50</p></li>
+          <li><span style='background:#E31A1C;'></span> <p class="lab3">50 to 80</p></li>
+          <li><span style='background:#FC4E2A;'></span> <p class="lab4">80 to 150</p></li>
+          <li><span style='background:#FD8D3C;'></span> <p class="lab5">150 to 250</p></li>
+          <li><span style='background:#FEB24C;'></span> <p class="lab6">250 to 500</p></li>
+          <li><span style='background:#FED976;'></span> <p class="lab7">More than 500</p></li>
+          <li><span style='background:#60605d;'></span> <p class="lab8">No Data</p></li>
+        </ul>
+      </div>
+    </div>
+    <!-- reset button -->
+    <button class="reset"> Reset Zoom </button>
+    <!-- previous button -->
+    <button class="previous"> < PREVIOUS </button>
+    <!-- next button -->
+    <button class="next"> NEXT > </button>
+    <!-- Javascript Imports -->
+    <script src="js/slide.js"></script>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
